@@ -46,21 +46,7 @@ const AddProducts = () => {
 				console.log(error);
 			});
 	};
-  // const handleImageUpload=(e)=>{
-  //   const img = e.target.files[0];
-  //   const imgData = new FormData();
-  //   imgData.set('key','a0a0d9caa0384637720b4ffbc0806ece')
-  //   imgData.append("image",img)
-  //   console.log(imgData);
-
-  //   axios.post('https://api.imgbb.com/1/upload',imgData)
-  //   .then(res => {
-  //   console.log(res);
-  //   setImageUrl(res.data.data.display_url)  
-  //   setIsButtonDisable(false)
-  //   })
-  //   .catch(error => console.log(error))
-  // }
+ 
 
 
   return (

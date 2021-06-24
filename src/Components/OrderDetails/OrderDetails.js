@@ -10,8 +10,6 @@ const OrderDetails = (props) => {
               <td>{UserName}</td>
               <td> 1 </td>
               <td>${Price}</td>
-              {/* <td>{orders.email}</td>
-              <td>{orders.orderTime}</td> */}
             </tr>
           </tbody>
     );
