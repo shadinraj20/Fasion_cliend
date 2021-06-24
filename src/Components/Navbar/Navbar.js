@@ -10,7 +10,10 @@ const Navbar = () => {
   const[name,setName]=useState(null)
   useEffect(()=>{
     const userName = JSON.parse(localStorage.getItem('user'))
-    setName(userName.name)
+    if (userName) {
+      setName(userName.name)
+    }
+   
 },[])
   
     return (
