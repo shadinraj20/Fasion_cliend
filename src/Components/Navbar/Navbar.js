@@ -2,13 +2,16 @@ import React, { useContext,userContext } from 'react';
 import './Navbar.css';
 import logo2 from '../../image/logo2.png';
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
+import { useState } from 'react';
 
 
 const Navbar = () => {
-  
-  const userName = JSON.parse(localStorage.getItem('user'));
-  const {name=""}=userName
-  console.log(userName);
+  const[name,setName]=useState(null)
+  useEffect(()=>{
+    const userName = JSON.parse(localStorage.getItem('user'))
+    setName(userName.name)
+},[])
   
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
