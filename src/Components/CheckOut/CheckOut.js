@@ -26,7 +26,6 @@ const CheckOut = () => {
     newCreateData.data = e.target.value;
     setCreateData(newCreateData);
   }
-  // fetch('https://limitless-badlands-88219.herokuapp.com/addCreate',
   const orderCheckOut = (e) => {
     // e.preventDefault()
     delete createData._id
